@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: "Poppins", serif;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f9;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 9px;
+}
+
+#helo {
+    font-weight: bold;
+    animation-name: helo;
+    animation-duration: 1s; /* Adjust duration as needed */
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards; /* Keeps the final shadow state */
+}
+
+@keyframes helo  {
+    0% {
+        transform: translate(0px, -80px);
+        opacity: 0
+    }
+    50% {
+        transform: translate(10px, 50px);
+        animation-timing-function: ease-in-out
+    }
+}
+        h1 {
+            text-align: center;
+            color: #4CAF50;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        input,
+        textarea {
+            margin-bottom: 15px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        textarea {
+            resize: none;
+        }
+
+        input:focus,
+        textarea:focus {
+            outline: none;
+            border-color: #4CAF50;
+        }
+
+        button {
+            padding: 10px 15px;
+            background-color: #1de023;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: large;
+            font-weight: bold;
+        }
+        button:hover {
+            background-color: #45a049;
+            transform: translateY(-3px);
+        }
+
+        button:active {
+            background-color: #3e8e41;
+            box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.2);
+            transform: translateY(0);
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+      
+        footer {
+            margin:auto 9px;
+            display: block;
+            text-align: center;
+            padding: 20px;
+            background-color: #f4f4f9;
+            color: #333;
+            margin-top: 20px;
+        }
+        footer a{
+            color: #4CAF50;
+            text-decoration: none;
+          
+        }
+        .fa-brands {
+            font-size: 40px;
+            margin-top: 32px;
+            text-decoration: none;
+            margin-left: 13px;
+            
+           
+        }
+        .fa-brands {
+    /* Add any initial styling for .fa-brands */
+    display: inline-block;
+    transition: transform 0.3s cubic-bezier(0.25, 0.1, 0.25, 1); /* Smooth ease-in-out */
+}
+
+.fa-brands:hover {
+    transform: scale(1.3);
+    margin-left: 19px;
+}
+
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Contact Us</h1>
+       
+
+            <!-- modify this form HTML and place wherever you want your form -->
+            <form action="https://formspree.io/f/xjkvddpr" method="POST" id="myform">
+
+                <label for="name"> <i class="fa-solid fa-user"></i> Name:</label>
+                <input type="text" id="name" name="name" placeholder="Your Name" autocapitalize="false" required>
+
+                <label for="email"> <i class="fa-solid fa-envelope"></i> Email:</label>
+                <input type="email" id="email" name="email" placeholder="Your Email" autocapitalize="false" required>
+
+                <label for="message"> <i class="fa-solid fa-message"></i> Message:</label>
+                <textarea id="message" name="message" rows="5" placeholder="Your Message" autocapitalize="false" required></textarea>
+ 
+                <button type="submit" id="btn">Send Message</button>
+
+            </form>
+    </div>
+
+
+    <footer>
+<!-- 
+        <iframe 
+    src="https://www.google.com/maps/embed?pb=YOUR_EMBED_URL"
+    width="100%" height="300" style="border:0;" allowfullscreen="400" loading="lazy">
+</iframe> -->
+
+      
+        &copy; 2024-2025 My Website. All rights reserved. Designed by <br><a href="https://www.yourwebsite.com"><span id="helo">Abhishek yadav</span></a>.
+
+
+        <div id="icon">
+         <a href="https://www.facebook.com/profile.php?id=100028733701422&mibextid=ZbWKwL" target="_blank"><i class="fa-brands fa-facebook" style="color: #1877F2;"></i>
+                </a>
+                </a>
+                <a href="https://www.instagram.com/invites/contact/?igsh=pq1wiyghqpoj&utm_content=j135rqw" target="_blank"><i class="fa-brands fa-instagram" style="color: #E4405F;"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/abhishek-yadav-292ba9308" target="_blank"><i class="fa-brands fa-linkedin" style="color: #0077B5;"></i>
+                </a>
+                <a href="https://github.com/timepass11211" target="_blank"> <i class="fa-brands fa-square-github" style="color: black;"></i>
+                </a>
+        </div>
+        
+
+    </footer>
+
+</body>
+</html>
